@@ -3,16 +3,16 @@
 //  tal que, dado un array como entrada extraiga y
 //  devuelva su primer elemento. Utiliza destructuring.
 
-const arr = ["sergio","pepe","juan","ivan","jose"];
+// const arr = ["sergio","pepe","juan","ivan","jose"];
 
-const head = (array) => {
+// const head = (array) => {
 
-  const [first] = array;
+//   const [first] = array;
 
-  return first;
+//   return first;
 
-}
-console.log(head(arr));
+// }
+// console.log(head(arr));
 
 
 
@@ -30,18 +30,18 @@ console.log(head(arr));
 
 
 
-
 // Init
 // Implementa una función init (inmutable), tal que,
 // dado un array como entrada devuelva todos los elementos menos el último.
 // Utiliza los métodos que ofrece Array.prototype.
-//  const arr = ["sergio","pepe","juan","ivan","jose"];
-// const init = (arr) => {
-//     const copy = arr.slice(0,arr.length);
-//     copy.pop();
-//     return copy;
-// };
-// console.log(init(arr));
+ const arr = ["sergio","pepe","juan","ivan","jose"];
+const init = (arr) => {
+    const copy = arr.slice(0,arr.length);
+    copy.pop();
+    return copy;
+};
+console.log(init(arr));
+
 
 
 
