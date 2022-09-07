@@ -2,9 +2,10 @@ console.log("SlotMachine");
 
 class SlotMachine {
 
-  constructor() {
+  constructor(name) {
     this.coins = 0;
-  }
+    this.name = name; 
+   }
 
   play() {
     this.coins++;
@@ -51,11 +52,15 @@ class SlotMachine {
 }
 
 const machine1 = new SlotMachine();
+const machine2 = new SlotMachine();
+
+machine1.name = "Ruleta de la suerte";
+machine2.name = "Ruleta 2";
 
 machine1.play();
 machine1.play();
 machine1.play();
 machine1.play();
-machine1.play();
-machine1.play();
-machine1.play();
+machine2.play();
+machine2.play();
+machine2.play();
