@@ -7,6 +7,7 @@ class SlotMachine {
     this.name = name; 
    }
 
+
   play() {
     this.coins++;
     let randomBoolean1 = false;
@@ -36,7 +37,7 @@ class SlotMachine {
       randomBoolean3 = true;
     }
 
-    console.log("Ruleta ", random1, random2, random3);
+    console.log(`${this.name} ${random1} ${random2} ${random3}`);
     if (randomBoolean1 && randomBoolean2 && randomBoolean3) {
       console.log(`Congratulations!!!. You won ${this.coins}  coins!!
       `);
@@ -51,11 +52,11 @@ class SlotMachine {
 
 }
 
-const machine1 = new SlotMachine();
-const machine2 = new SlotMachine();
+const machine1 = new SlotMachine('Ruleta');
+const machine2 = new SlotMachine('TragaPerras');
 
-machine1.name = "Ruleta de la suerte";
-machine2.name = "Ruleta 2";
+console.log(machine1);
+console.log(machine2);
 
 machine1.play();
 machine1.play();
